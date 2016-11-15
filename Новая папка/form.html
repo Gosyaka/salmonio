@@ -1,0 +1,124 @@
+<!Doctype html>
+<html>
+   <head>
+   	<meta charset="utf-8">
+   	<title>My website name</title>
+   	<meta name="description" content="decription about my website">
+   	<link href="media/css/style.css" rel="stylesheet">
+   </head>
+ <body>
+ 	
+    <div class="mainblock">
+    	<header class="header">
+    		<img src="media/img/logo.png" class="logo">
+    		<h1 class="logotex">Instagram</h1>
+    	</header>
+ 	<div class="top">
+ 		<nav class="topmenu">
+ 			<a href="#">О компании</a>
+ 			<a href="#">Новости</a>
+ 			<a href="#">Вакансии</a>
+ 			<a href="#">Контакты</a>
+        </nav>
+ 	</div> <!----end of top class -->
+ 	<section class="real-block">
+ 		<nav class="left-menu">
+ 			<a href="#">Website development</a>
+ 			<a href="#">SEO</a>
+ 			<a href="#">Organization</a>
+ 		</nav>
+ 		<article class="text-block">
+        <h2>Registration</h2>
+		<form action='#' method='post'>
+		<p>
+		<label for="name"> Name </label/>
+		<input type="text" name="name"/>
+		</p>
+		<label for="Textarea"> Textarea </label/>
+		<br>
+		<textarea id="textarea" name="body" oninput="validaty(this)" rows=10 cols=30 >
+		</textarea>
+		<p>
+		<label for="select"> Select </label>
+		<select name="mylist">
+		    <option value=1> one </option>
+			<option value=2> two </option>
+		</select>
+		<p>
+		<label for="email"> Email </label>
+		<input type="email" name="email"</>
+		<p>
+		<label for="search"> Search </label>
+		<input type="search" name="search" list="mydata"/>
+		</p>
+		<p>
+		<label for="url"> URL </label>
+		<input type="url" name="url" placeholder="URL"/>
+		</p>
+		<p>
+		<label for="number"> Number </label>
+		<input type="number" name="Number" min=0 max=100 step=5 />
+		</p>
+		<p>
+		<label for="range"> Range </label>
+		<input type="range" min=0 max=10 step=2 />
+		</p>
+		<p>
+		<label for="progress"> Progress </label>
+		<progress> working... </progress>
+		<progress value=75 max=100> 3/4 complete </progress>
+		</p>
+		<p>
+		<label for="meter"> Meter </label>
+		<meter min=0 max=100 low=40 hight=90 optimum=70 value=50> Meter </meter>
+		</p>
+		<p>
+		<label for="date"> Date </label>
+		<input type="datetime-local"/>
+		</p>
+		<p>
+		<label for="color"> Color </label>
+		<input type="color" multiple/>
+		</p>
+		<p>
+		<label for="text"> Regular Phrase </label>
+		<input type="text" name="pcode" pattern="[A-Z]{3}-[0-9]{3}"/>
+		</p>
+		<datalist id="mydata" name="">
+		    <option value=123-123 label="Phone1"/>
+		    <option value=234-234 label="Phone2"/>
+		</datalist>
+		</p>
+		<p>
+		<label </label>
+		<input type="url" name="url" />
+		</p>
+		<p>
+		<label for="submit"> Submit </label>
+		<input type="submit" value="Send" value="save"/>
+		</p>
+		<p class="text" contentEditable>
+		<script> 
+		function validaty(input){
+		
+		if(input.value.length <10){
+		console.log(input.value.length)
+		input.setCustomValidity("You enter less than 10 symbols");
+		}else{
+		input.setCustomValidity("");
+		 }
+		}
+		</script>
+		</form>
+		You can edit this text
+		</p>
+		</article>
+ 	</section>
+<footer class="footer">
+	<a href="mailto:mikhalkevich@ya.ru">mikhalkevich@ya.ru</a>
+&copy;2016
+</footer>
+
+ 	</div><!----end of mainblock class -->
+ </body>  
+</html>

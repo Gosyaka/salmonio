@@ -1,0 +1,6 @@
+#canvas{
+	border:solid 1px grey;
+	box-shadow:1px 1px 1px black;
+	background:url('../img/back2.jpg');
+	cursor:none;
+}
